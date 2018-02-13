@@ -1,0 +1,186 @@
+/*------------------*/
+/* Section 1: Fonts */
+/*------------------*/
+
+/* Import fonts */
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+
+/* Set fonts for body text and headers */
+body { font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+}
+.remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; }
+
+/*--------------------*/
+/* Section 1.5: Title Slides */
+/*--------------------*/
+
+.title-slide-dark {
+  background-image: url("../img/title-background-1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #272822; /* background color */
+  color: #d6d6d6; /* text color */
+  vertical-align:middle;
+  text-align:center;
+}
+.title-slide-dark h1 {
+  display: block;
+  color: white;
+  background: black;
+  position: relative;
+  left: -12%;
+  width: 112%;
+  margin:-0.5px;
+  padding:10px 50px;
+  opacity: 0.7;
+}
+.title-slide-dark h2 {
+  display: block;
+  color: white;
+  background: black;
+  position: relative;
+  left: -12%;
+  width: 112%;
+  margin:0px;
+  padding:10px 50px;
+  opacity: 0.7;
+}
+
+.title-slide-dark div.footer {
+    color: white; 
+    background: black;
+    position: absolute; 
+    top: 85%; /* top of footer starts 80% of way down slide */
+    bottom: 100%; /* top of footer starts 80% of way down slide */
+    left: 0%; /* left of footer starts on the left side of slide */
+    text-align:center; 
+    vertical-align:center;
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:10px;
+    opacity:0.7;
+}
+
+/*--------------------*/
+/* Section 2: General */
+/*--------------------*/
+
+/* Hyperlinks */
+a, a > code {
+  color: rgb(249, 38, 114);
+  text-decoration: none;
+}
+
+/* Footnotes */
+.footnote {
+  position: absolute;
+  bottom: 3em;
+  padding-right: 4em;
+  font-size: 90%;
+}
+.remark-code-line-highlighted     { background-color: #ffff88; }
+
+.title h2, .title h3 {
+  color: #f3f3f3; /* header colors */
+}
+/* Title Slide Footer */
+.title div.footer {
+    color: black; 
+    background: #E8E8E8;
+    position: absolute; 
+    top: 85%; /* top of footer starts 80% of way down slide */
+    bottom: 100%; /* top of footer starts 80% of way down slide */
+    left: 0%; /* left of footer starts on the left side of slide */
+    text-align:center; 
+    vertical-align:center;
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:10px;
+    opacity:0.8;
+}
+/* Slide class = "dark" */
+.dark {
+  background-color: #272822; /* background color */
+  color: #d6d6d6; /* text color */
+  text-shadow: 0 0 20px #333; /* text shadow on bottom */
+}
+.dark h1, .dark h2, .dark h3 {
+  color: #f3f3f3; /* header colors */
+}
+
+/* Slide class = "blue" */
+.blue {
+  background-color: #358bd6; /* background color */
+  color: #ffffff; /* text color */
+  text-shadow: 0 0 20px #333; /* text shadow on bottom */
+}
+.blue h1, .blue h2, .blue h3 {
+  color: #f3f3f3; /* header colors */
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+/* Images, Videos, Etc. */
+img, video, iframe {
+  max-width: 100%;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+
+/* Tables */
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+/* Presentation Transformation */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
