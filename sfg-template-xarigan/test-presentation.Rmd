@@ -16,33 +16,56 @@ output:
 ```{r setup, include=FALSE}
 library(htmltools)
 options(htmltools.dir.version = FALSE)
-image_dir <- "./img/"
 ```
+
+background-image: url("./img/title-background-1.jpg")
 class: title-slide-dark
 
-# Your title goes here... You can make it really long if you want
-## Subtitle
+# Your title goes here...
+### Your subtitle can go here. Or delete this line. 
 
-```{r title-footer, echo=FALSE, include=TRUE}
-### Footer bar across title slide with SFG logo, MSI logo, and Bren logo. Change include to "FALSE" if you don't want to include it. 
-div(class = 'footer')
-```
+Author 1, Author 2, Author 3, Author 4... Or delete this line. 
+
+You can also keep adding more text if you really want to.... 
+
+`r div(id='title-footer', img(src='./img/sfg-logo-white.png'), img(src='img/bren-logo-white.png'), img(src='img/msi-logo-white.png'))`
+
+---
+background-image: url("./img/title-background-2.jpg")
+class: title-slide-light
+
+# Your title goes here...
+### Your subtitle can go here. Or delete this line. 
+
+Kat Millage, Other Person, Other Person. Or delete this line. 
+
+You can also keep adding more text if you really want to.... 
+
+`r div(id='title-footer', img(src='./img/sfg-logo-black.png'), img(src='img/bren-logo-black.png'), img(src='img/msi-logo-black.png'))`
 
 ---
 class: center, middle
 
-# xaringan
+# White with Centered Text
 
-### /ʃæ.'riŋ.ɡæn/
-
----
-class: inverse, center, middle
-
-# Get Started
+`r div(id='logo-footer-black')`
 
 ---
+class: dark, center, middle
 
-# Hello World
+# Dark with Centered Text
+
+`r div(id='logo-footer-white')`
+
+---
+class: blue, center, middle
+
+# Blue with Centered Text
+
+`r div(id='logo-footer-white')`
+---
+
+# Standard Layout
 
 Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
 
@@ -50,6 +73,7 @@ Install the **xaringan** package from [Github](https://github.com/yihui/xaringan
 devtools::install_github("yihui/xaringan")
 ```
 
+`r div(id='logo-footer-black')`
 --
 
 You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
@@ -71,11 +95,73 @@ You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rs
 ]
 
 ---
-background-image: url(`r xaringan:::karl`)
-background-position: 50% 50%
-class: center, bottom, inverse
 
-# You only live once!
+# Two Column Layouts
+
+Here's an example of how to position your content in a two column layout: 
+
+.pull-left[
+1. Let's say I want an ordered list
+
+1. Item 2
+
+1. Item 3
+
+1. Item 4
+
+1. Item 5
+
+]
+
+.pull-right[
+* Or maybe I want a bulletted list
+  + Sub bullets! 
+  
+* Bullet 2
+
+* Bullet 3
+
+* Bullet 4<sup>*</sup>
+
+* Bullet 5
+
+]
+.footnote[[*] Not really. Lame excuse here.]
+
+`r div(id='logo-footer-black')`
+
+---
+
+# Two Column Layouts
+
+.pull-left[
+* I want a bulletted list
+  + Sub bullets! 
+  
+* Bullet 2
+
+* Bullet 3
+
+* Bullet 4
+
+* Bullet 5
+
+]
+
+.pull-right[
+```{r echo=F}
+# a boring regression
+fit = lm(dist ~ 1 + speed, data = cars)
+```
+
+```{r carsplot, echo = F}
+par(mar = c(4, 4, 1, .1))
+plot(cars, pch = 19, col = 'darkgray', las = 1)
+abline(fit, lwd = 2)
+```
+]
+
+`r div(id='logo-footer-black')`
 
 ---
 
@@ -108,13 +194,6 @@ It is important to be familiar with remark.js before you can understand the opti
 .footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purporses. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
 
 ---
-background-image: url(`r xaringan:::karl`)
-background-size: cover
-class: center, bottom, inverse
-
-# I was so happy to have discovered remark.js!
-
----
 class: inverse, middle, center
 
 # Using xaringan
@@ -140,7 +219,7 @@ See the help page `?xaringan::moon_reader` for all possible options that you can
 
 ---
 
-# remark.js vs xaringan
+# Two Column Layout
 
 Some differences between using remark.js (left) and using **xaringan** (right):
 

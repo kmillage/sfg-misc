@@ -27,28 +27,63 @@
     <textarea id="source">
 
 
+
+background-image: url("./img/title-background-1.jpg")
 class: title-slide-dark
 
-# Your title goes here... You can make it really long if you want
-## Subtitle
+# Your title goes here...
+### Your subtitle can go here. Or delete this line. 
 
-<div class="footer"></div>
+Author 1, Author 2, Author 3, Author 4... Or delete this line. 
+
+You can also keep adding more text if you really want to.... 
+
+<div id="title-footer">
+<img src="img/sfg-logo-white.png"/>
+<img src="img/bren-logo-white.png"/>
+<img src="img/msi-logo-white.png"/>
+</div>
+
+---
+background-image: url("./img/title-background-2.jpg")
+class: title-slide-light
+
+# Your title goes here...
+### Your subtitle can go here. Or delete this line. 
+
+Kat Millage, Other Person, Other Person. Or delete this line. 
+
+You can also keep adding more text if you really want to.... 
+
+<div id="title-footer">
+<img src="img/sfg-logo-black.png"/>
+<img src="img/bren-logo-black.png"/>
+<img src="img/msi-logo-black.png"/>
+</div>
 
 ---
 class: center, middle
 
-# xaringan
+# White with Centered Text
 
-### /ʃæ.'riŋ.ɡæn/
-
----
-class: inverse, center, middle
-
-# Get Started
+<div id="logo-footer-black"></div>
 
 ---
+class: dark, center, middle
 
-# Hello World
+# Dark with Centered Text
+
+<div id="logo-footer-white"></div>
+
+---
+class: blue, center, middle
+
+# Blue with Centered Text
+
+<div id="logo-footer-white"></div>
+---
+
+# Standard Layout
 
 Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
 
@@ -57,6 +92,7 @@ Install the **xaringan** package from [Github](https://github.com/yihui/xaringan
 devtools::install_github("yihui/xaringan")
 ```
 
+<div id="logo-footer-black"></div>
 --
 
 You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
@@ -78,11 +114,66 @@ You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rs
 ]
 
 ---
-background-image: url(https://github.com/yihui/xaringan/releases/download/v0.0.2/karl-moustache.jpg)
-background-position: 50% 50%
-class: center, bottom, inverse
 
-# You only live once!
+# Two Column Layouts
+
+Here's an example of how to position your content in a two column layout: 
+
+.pull-left[
+1. Let's say I want an ordered list
+
+1. Item 2
+
+1. Item 3
+
+1. Item 4
+
+1. Item 5
+
+]
+
+.pull-right[
+* Or maybe I want a bulletted list
+  + Sub bullets! 
+  
+* Bullet 2
+
+* Bullet 3
+
+* Bullet 4&lt;sup&gt;*&lt;/sup&gt;
+
+* Bullet 5
+
+]
+.footnote[[*] Not really. Lame excuse here.]
+
+<div id="logo-footer-black"></div>
+
+---
+
+# Two Column Layouts
+
+.pull-left[
+* I want a bulletted list
+  + Sub bullets! 
+  
+* Bullet 2
+
+* Bullet 3
+
+* Bullet 4
+
+* Bullet 5
+
+]
+
+.pull-right[
+
+
+![](test-presentation_files/figure-html/carsplot-1.png)&lt;!-- --&gt;
+]
+
+<div id="logo-footer-black"></div>
 
 ---
 
@@ -115,13 +206,6 @@ It is important to be familiar with remark.js before you can understand the opti
 .footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purporses. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
 
 ---
-background-image: url(https://github.com/yihui/xaringan/releases/download/v0.0.2/karl-moustache.jpg)
-background-size: cover
-class: center, bottom, inverse
-
-# I was so happy to have discovered remark.js!
-
----
 class: inverse, middle, center
 
 # Using xaringan
@@ -147,7 +231,7 @@ See the help page `?xaringan::moon_reader` for all possible options that you can
 
 ---
 
-# remark.js vs xaringan
+# Two Column Layout
 
 Some differences between using remark.js (left) and using **xaringan** (right):
 
@@ -325,8 +409,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(-93.65, 42.0285, zoom = 17)
 ```
 
-<div id="htmlwidget-7255d957c65fb53010cb" style="width:100%;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7255d957c65fb53010cb">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a0dccf25a3b78b131a1b" style="width:100%;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a0dccf25a3b78b131a1b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 ---
 
@@ -338,8 +422,8 @@ DT::datatable(
 )
 ```
 
-<div id="htmlwidget-56e36caed951e20ab026" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-56e36caed951e20ab026">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f5032e95fc6a28b310b1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f5032e95fc6a28b310b1">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 
