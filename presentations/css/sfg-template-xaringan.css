@@ -22,21 +22,48 @@ h1, h2, h3 {
   opacity: 0.7; /* default: 0.5 */
 }
 
+/* Trying to move things to the left... not working need to find source code */
 body {
   margin:0;
   padding:0;
 }
 
+/* ------------------------------------------ */
+/* Auto-generated title slide (YAML "seal" must be set to "true") */
+/* ------------------------------------------ */
+
 .title-slide {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/39/Naruto_Shiki_Fujin.svg);
-  background-size: cover;
+  background-image: url("../img/title-background-2.jpg"); /* will make this user-changeable in the future */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: white; /* background color */
+  color: black; /* text color */
+  vertical-align: middle;
+  text-align: left;
 }
+
+.title-slide .remark-slide-number {
+  display: none; /* hides slide number on the title page */
+}
+
 .title-slide h1 {
-  color: #F7F8FA;
+  text-shadow: none;
+  color: black;
+  margin-top: -70px;
 }
-.title-slide h2, .title-slide h3 {
-  color: #e7e8e2; 
-  line-height: 1.5em;
+
+.title-slide h2, .title-slide h3, .title-slide h4, .title-slide p {
+  display: block;
+  background: rgb(255,255,255); /* black background for browsers that don't support opacity */
+  background: rgba(255,255,255,0.6); /* semi-transparent black background for browsers that do support opacity */
+  position: relative;
+  left: -12%;
+  width: 112%;
+  margin:0;
+  border:0;
+  padding:10px 80px;
+  line-height: 1em;
+  text-align: left;
 }
 
 /*-------------------------------*/
@@ -83,6 +110,7 @@ body {
     padding:15px;
     width:100%;
     height:100%;
+    text-align:center;
 }
 
 .title-slide-dark img {
@@ -101,7 +129,7 @@ body {
   background-color: white; /* background color */
   color: black; /* text color */
   vertical-align:middle;
-  text-align:center;
+  text-align:left;
 }
 .title-slide-light .remark-slide-number {
   display: none; /* hides slide number on the title page */
@@ -115,7 +143,7 @@ body {
   width: 112%;
   margin:0;
   border:0;
-  padding:10px 50px;
+  padding:10px 80px;
 }
 .title-slide-light #title-footer {
     background: rgb(255,255,255); /* white background for browsers that don't support opacity */
@@ -125,15 +153,16 @@ body {
     bottom: 1; /* top of footer starts 80% of way down slide */
     left: 0; /* left of footer starts on the left side of slide */
     margin:0px;
-    padding:15px;
+    padding:15px 52px;
     width:100%;
     height:100%;
+    text-align:center;
 }
 
 .title-slide-light img {
     height: 8%;
-    margin: 0px 15px;
-    float:center;
+    margin: 0px 30px;
+    float:left;
 }
 
 #logo-footer-black {
@@ -221,6 +250,13 @@ a, a > code {
 }
 .pull-right ~ * {
   clear: both;
+}
+.pull-center {
+  display:block;
+  position:relative;
+  right: -10%; /* or right 50% */
+  text-align: left;
+  width: 100%;
 }
 
 /* Images, Videos, Etc. */

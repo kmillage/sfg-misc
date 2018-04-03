@@ -1,0 +1,399 @@
+---
+title: "The Tuna Chronicles"
+subtitle: "AKA: What we've been trying to do for a year"
+author: "Kat Millage"
+date: "2018/02/21"
+output:
+  xaringan::moon_reader:
+    chakra: './libs/remark-latest.min.js'
+    css: './css/sfg-template-xaringan.css'
+    lib_dir: './libs'
+    seal: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+background-image: url("./img/title-background-2.jpg")
+class: title-slide-light
+
+```{r setup, include=FALSE}
+library(htmltools)
+options(htmltools.dir.version = FALSE)
+```
+
+<p><h1>The Tuna Chronicles</h1></p>
+<p><small>Kat Millage, Matthew Burgess, Daniel Ovando, Lennon Thomas, Laura Lea Rubino, Christopher Costello</small> <br>
+<br>
+<sub><sup><i>SFG Lab Meeting, February 21, 2018</small></sub></sup></i></p>
+
+`r div(id='title-footer', img(src='./img/sfg-logo-black.png'), img(src='img/bren-logo-black.png'), img(src='img/msi-logo-black.png'))`
+
+---
+class: dark, middle
+
+# The Beginning 
+
+`r div(id='logo-footer-white')`
+
+---
+
+# Background
+
+- First major project for TNC's Tuna Program
+.pull-center[
+`r img(src='img/tnc-share-logo.gif', style='height:200px; align:center')`
+]
+
+
+- Pacific Tuna Skunkworks meeting in October 2015
+
+- Project Objectives set in May 2016
+
+
+`r div(id='logo-footer-black')`
+
+---
+class: dark, middle
+
+### To ensure that Pacific tuna fisheries chart a path towards sustainable and economically sound management of tuna catch and bycatch, supporting both the long-term viability of the fisheries and fisher livelihoods.
+
+`r div(id='logo-footer-white')`
+
+---
+
+### Western and Central Pacific Ocean (WCPO)
+
+`r img(src='img/rfmo-regions.jpg', style='width:100%; align:center')`
+
+- Western & Central Pacific Fisheries Commission (WCPFC) 
+- Secretariat of the Pacific Community (SPC) 
+
+`r div(id='logo-footer-black')`
+
+---
+
+# All The Tuna
+
+.pull-left[
+
+ALB
+`r img(src='img/alb.jpeg', style='width:100%; align:center')`
+BET
+`r img(src='img/bet.jpeg', style='width:100%; align:center')`
+
+]
+
+.pull-right[
+SKJ
+`r img(src='img/skj.jpeg', style='width:100%; align:center')`
+YFT
+`r img(src='img/yft.gif', style='width:100%; align:center')`
+
+]
+
+`r div(id='logo-footer-black')`
+
+---
+
+# Who Goes There
+
+`r img(src='img/fishingvessels.png', style='width:100%; align:center')`
+
+- 20+ countries
+- 4 main gear types: Longline, pole-and-line, purse seine, and troll
+
+`r div(id='logo-footer-black')`
+
+---
+
+### Parties to the Nauru Agreement (PNA)
+
+`r img(src='img/tunapna.jpg', style='width:100%; align:center')`
+
+- Federated States of Micronesia, Kiribati, the Marshall Islands, Nauru, Palau, Papua New Guinea, Solomon Islands and Tuvalu
+- Control 50% of the global supply of skipjack tuna
+
+`r div(id='logo-footer-black')`
+
+---
+
+# Management Challenges
+
+.pull-left[
+
+`r img(src='img/ps.jpg', style='width:120%; align:center')`
+
+]
+
+.pull-right[
+
+`r img(src='img/betwithfad.png', style='width:130%; align:center')`
+
+]
+
+`r div(id='logo-footer-black')`
+
+---
+
+# Overfishing 
+
+.pull-left[
+
+BET (Harley et al. 2014)
+
+`r img(src='img/betkobe.png', style='width:100%; align:center')`
+
+]
+
+.pull-right[
+
+YFT (Davies et al. 2014)
+
+`r img(src='img/yftkobe.png', style='width:100%; align:center')`
+
+]
+
+`r div(id='logo-footer-black')`
+
+---
+class: dark, middle
+
+# The Process
+
+`r div(id='logo-footer-white')`
+
+---
+
+# Project Objective(s)
+`r div(id='logo-footer-black')`
+Conduct a full bio-economic evaluation of alternative scenarios for the institutional structure of the tuna fisheries in the Western and Central Pacific Ocean with bycatch reduction as a primary goal.
+
+--
+  - Status quo
+  
+  - FAD taxes
+  
+  - Transferable effort quotas
+  
+  - Transferable catch quotas
+  
+  - Transferable relative quotas
+  
+---
+class: center
+
+`r img(src='img/comic-top.jpg', style='width:70%; align:center')`
+`r div(id='logo-footer-black')`
+--
+`r img(src='img/comic-bottom.jpg', style='width:70%; align:center')`
+
+---
+
+# Project Objective(s)
+`r div(id='logo-footer-black')`
+~~Conduct a full bio-economic evaluation of alternative scenarios for the institutional structure of the tuna fisheries in the Western and Central Pacific Ocean with bycatch reduction as a primary goal.~~
+
+<br>
+--
+
+Conduct a bio-economic evaluation of alternative policy scenarios for a multi-species and multi-fleet fishery that vaguely resembles the WCPO with bycatch reduction as a primary goal. 
+
+---
+
+# What Overfishing? 
+
+.pull-left[
+
+BET (Harley et al. 2014)
+
+`r img(src='img/betkobe.png', style='width:100%; align:center')`
+
+]
+
+.pull-right[
+
+BET (McKechnie et al. 2017)
+
+`r img(src='img/betkobe2017.png', style='width:100%; align:center')`
+
+]
+
+`r div(id='logo-footer-black')`
+
+---
+
+# Project Objective(s)
+
+~~Conduct a full bio-economic evaluation of alternative scenarios for the institutional structure of the tuna fisheries in the Western and Central Pacific Ocean with bycatch reduction as a primary goal.~~
+
+<br>
+~~Conduct a bio-economic evaluation of alternative policy scenarios for a multi-species and multi-fleet fishery that vaguely resembles the WCPO with bycatch reduction as a primary goal.~~
+
+`r div(id='logo-footer-black')`
+<br>
+--
+Derive the theoretical economic advantage of catch-based management instruments over effort-based management instruments. 
+
+---
+class: dark, middle
+
+# The Final Hour
+
+`r div(id='logo-footer-white')`
+
+---
+
+# Theory
+`r div(id='logo-footer-black')`
+
+**Overfishing:** Vessels do not adequately account for the externalities caused by their catches depleting fish stocks
+
+--
+
+**Fishery Management Tool:** Limit short-term catches in service to long-term ecological, economic, and social objectives
+
+  - Can be accomplished more efficiently with catch-based management instruments 
+
+---
+# Theory: C vs. E
+`r div(id='logo-footer-black')`
+$Externalities \propto catches$
+--
+
+* Unless all vessels have the same CPUE, difficult to offset with a $single fee \propto effort$
+
+---
+class: center
+
+`r img(src='img/boat_graphic.png', style='width:100%; align:left')`
+
+.pull-left[
+**Vessel #1**<br>
+Catch/day = 1 mt<br>
+Profit/day = $20K<br>
+Profit/catch = $20/kg
+]
+
+.pull-right[
+**Vessel #2**<br>
+Catch/day = 0.5 mt<br>
+Profit/day = $15K<br>
+Profit/catch = $30/kg
+]
+
+`r div(id='logo-footer-black')`
+---
+
+# Theory: C vs. E
+`r div(id='logo-footer-black')`
+
+* The "Wedge" (aka the theoretical advantage of catch-based instruments relative to effort-based instruments), should depend on two factors: 
+
+    1. Size of costs from depleting stock in the future ("externalities") relative to benefits of catch now
+    
+    2. Degree to which effort-based instruments capture these costs ("externalities")
+
+---
+
+## Size of the Wedge: Theoretical
+
+To measure the size of the externalities relative to the benefits...
+
+$Z_j$ : Tax/Revenue
+
+  - Ratio between the price that a vessel would pay per unit effort under the best catch-based policy, and the revenue it would receive under the best catch-based policy
+
+$$Z_j = \frac{\lambda_{cj}}{R_{cj}}$$
+
+`r div(id='logo-footer-black')`
+
+---
+
+## Size of the Wedge: Theoretical
+
+To measure the degree to which an effort-based policy can capture capture the externality costs...
+
+$\epsilon_j$ : Effort tax/Catch tax
+
+  - Proportional difference between the price that a vessel pays per unit effort under the best effort-based policy, compared to the best catch-based policy
+
+$$\epsilon_j = 1 - \frac{\lambda_e}{\lambda_{cj}}$$
+
+`r div(id='logo-footer-black')`
+
+---
+
+## Size of the Wedge: Theoretical
+
+$$W = \frac{\sum_{j=1}^{J}\epsilon_{j}^2 Z_{j}^2 \omega_{j}}{\sum_{j=1}^{J}(1-Z_{j})^2 \omega_j}$$
+
+- Note the weighted averages of square terms!  
+
+- Intuition is that prices of catch and effort quotas/taxes each represent/measure marginal benefits or costs  
+
+- Since the wedge compares total benefits or costs --> higher dimension
+
+`r div(id='logo-footer-black')`
+--
+
+### Both values generally less than 1, wedge will be quite small (<10%) or quite large (>50%)! 
+
+---
+
+## Size of the Wedge: Theoretical
+
+.pull-center[
+`r img(src='img/wedge.png', style='width:70%; align:center')`
+]
+
+`r div(id='logo-footer-black')`
+
+---
+
+## Size of the Wedge: Data
+
+Currently an effort-based policy in place... Can approximate $Z$, $\epsilon$, and $W$ from data
+
+`r img(src='img/z_from_vds.png', style='width:100%; align:center')`
+
+`r div(id='logo-footer-black')`
+
+---
+
+## Size of the Wedge: Data
+
+Currently an effort-based policy in place... Can approximate $Z$, $\epsilon$, and $W$ from data
+
+`r img(src='img/wedge_from_vds.png', style='width:100%; align:center')`
+
+`r div(id='logo-footer-black')`
+
+---
+
+## Size of the Wedge: Simulation
+
+Can use our simulation model to compare optimal catch and effort-based policies
+
+`r img(src='img/result_boxplot_all.png', style='width:100%; align:center')`
+
+`r div(id='logo-footer-black')`
+
+---
+class: dark, middle
+
+### The "wedge" between catch and effort-based policy instruments is likely quite small for the WCPO tuna fishery
+
+---
+class: dark, middle
+
+.pull-left[
+# The End (?!)
+]
+
+.pull-right[
+`r img(src='img/wine.png', style='width:80%; align:center')`
+]
+
+`r div(id='logo-footer-white')`
+
