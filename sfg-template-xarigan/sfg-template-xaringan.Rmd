@@ -11,7 +11,6 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-    seal: true
 ---
 `r #This sets the footer for all subsequent slides (or at least until a different layout is specified). Choices for logos are: "sfg-footer-black" or "sfg-footer-color"`
 layout: true
